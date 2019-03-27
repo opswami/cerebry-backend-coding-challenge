@@ -14,7 +14,7 @@ class CitySearch(TestCase):
         '''
             Setting up testing data every type for each method call
         '''
-        self.api_url = '/api/cities/search/'
+        self.api_url = '/api/cities/suggestions/'
 
     def test_city_search_status_code_correct_params(self):
         '''

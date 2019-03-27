@@ -52,7 +52,7 @@ def get_cities(request):
 			geo_distance = city_data['geo_distance']
 			score = min_distance/geo_distance
 			cities_suggestions[index]['score'] = "%0.1f" %score
-	cities_suggestions = sorted(cities_suggestions, key = lambda i: i['score'],reverse=True) 
+		cities_suggestions = sorted(cities_suggestions, key = lambda i: i['score'],reverse=True) 
 	result_cities_data['suggestions'] = cities_suggestions
 	return Response(result_cities_data)
 
